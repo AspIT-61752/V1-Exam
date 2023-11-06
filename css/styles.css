@@ -1,0 +1,40 @@
+:root {
+  --color-main: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ID's */
+
+/* Classes */
+.card-container {
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.justify-space {
+  justify-content: space-evenly;
+}
+
+.remove-decorations {
+  text-decoration: none;
+}
+
+.logo {
+  width: 6%;
+}
