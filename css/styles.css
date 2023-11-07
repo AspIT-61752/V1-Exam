@@ -1,40 +1,93 @@
 :root {
-  --color-main: #fff;
+	--color-main: #fff;
+
+	--button-main: #6d6d6d;
+	--button-main-hover: hsl(0, 0%, 33%);
+
+	--card-background: #9e3333;
 }
 
 * {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 nav {
-  display: flex;
+	display: flex;
+	margin: 1vh 1vw;
+}
+
+/* TODO: Check if this aligns the text with the image */
+nav * {
+	margin: auto 0;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 /* ID's */
 
 /* Classes */
+.button {
+	margin: 0 auto;
+	margin-top: 2vh;
+	width: 80%;
+
+	background-color: var(--button-main);
+	border-radius: 0.3em;
+}
+
+.button:hover {
+	/* Transition 0.4 sec */
+	background-color: var(--button-main-hover);
+}
+
+.button i {
+	margin-right: 4px;
+}
+
+.button h4 {
+	text-align: center;
+}
+
 .card-container {
+	/* 100%-20% = 80
+  80% - (5*3) = 65
+  65 / 3 = 21.67*/
+	max-width: 21%;
+	margin: 0 2.5%;
+
+	background-color: var(--card-background);
+	border-radius: 0.4em;
+}
+
+.card-container img {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	max-width: 256px;
+}
+
+.center-80 {
+	width: 80%;
+	margin: 0 auto;
 }
 
 .flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 
 .justify-space {
-  justify-content: space-evenly;
+	justify-content: space-between;
 }
 
 .remove-decorations {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .logo {
-  width: 6%;
+	width: 6%;
 }
